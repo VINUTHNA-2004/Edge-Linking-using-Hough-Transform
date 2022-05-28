@@ -32,9 +32,10 @@ End the program.
 
 
 ## Program:
-```Python
 
-# Read image and convert it to grayscale image
+
+### Read image and convert it to grayscale image
+
 ```
 
 import cv2
@@ -50,7 +51,7 @@ cv2.imshow("Gray Image",grayImage)
 ```
 
 
-# Find the edges in the image using canny detector and display
+### Find the edges in the image using canny detector and display
 ```
 
 import cv2
@@ -66,7 +67,7 @@ cv2.imshow("Gray Image",grayImage)
 
 
 
-# Detect points that form a line using HoughLinesP
+### Detect points that form a line using HoughLinesP
 
 ```
 
@@ -76,7 +77,7 @@ lines = cv2.HoughLinesP(cannyEdges,1,np.pi/180,threshold=80,minLineLength = 50,m
 
 
 
-# Draw lines on the image
+### Draw lines on the image
 ```
 for line in lines:
 x1, y1, x2, y2 = line [0]
@@ -85,7 +86,7 @@ cv2.line(image,(x1, y1),(x2, y2),(255, 0, 0),3)
 ```
 
 
-# Display the result
+### Display the result
 ```
 
 plt.title("Hough Transform")
@@ -94,18 +95,23 @@ plt.show()
 
 ```
 
-## Output
+### Output
 
 ### Input image and grayscale image
+
 ![output](https://github.com/VINUTHNA-2004/Edge-Linking-using-Hough-Transform/blob/main/l1.png?raw=true)
+
 ![output](https://github.com/VINUTHNA-2004/Edge-Linking-using-Hough-Transform/blob/main/l22.png?raw=true)
 
 ### Canny Edge detector output
+
 ![output](https://github.com/VINUTHNA-2004/Edge-Linking-using-Hough-Transform/blob/main/l2.png?raw=true)
 
 ### Display the result of Hough transform
+
+
 ![output](https://github.com/VINUTHNA-2004/Edge-Linking-using-Hough-Transform/blob/main/l4.png?raw=true)
 
 
-## Result:
+### Result:
 Thus the program is written with python and OpenCV to detect lines using Hough transform. 
